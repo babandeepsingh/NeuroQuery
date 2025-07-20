@@ -8,7 +8,6 @@ import CodeBlock from './Components/CodeBlock';
 import { useUser } from '@clerk/nextjs';
 
 export default function HomePage() {
-  console.log(process.env.NEXT_PUBLIC_OPENAI_API_KEY);
   const { isSignedIn, user, isLoaded } = useUser();
 
   console.log("SignIn", isSignedIn, user, isLoaded)

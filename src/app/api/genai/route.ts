@@ -10,7 +10,6 @@ const openai = new OpenAI({
 
 
 export async function GET() {
-    console.log(process.env.OPENAI_API_KEY)
     return NextResponse.json({
         message: 'Hello from static API!',
     });

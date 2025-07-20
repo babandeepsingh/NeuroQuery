@@ -9,7 +9,7 @@ const pool = new Pool({
 export async function POST(req: NextRequest) {
     const body = await req.json();
     const { fullName, id, email, user } = body;
-    console.log("post:userMessage", fullName, id, email, process.env.POSTGRES_DB_URL);
+    console.log("post:userMessage", fullName, id, email);
 
     let client;
 
